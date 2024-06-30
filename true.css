@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nice img{
+    position: absolute;
+    left:600px;
+    bottom: 270px;
+}

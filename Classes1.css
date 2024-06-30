@@ -1,0 +1,1204 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+/*  font-family: Arial;*/
+}
+
+section{
+	height: 100vh;
+	width: 100%;
+}
+
+section nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
+	z-index:1000;
+	box-shadow:black;
+	background-color:black;
+	height: 90px;
+}
+
+.icons{
+	fill: white;
+    font-size: 25px;
+	color: white;
+	position: absolute;
+	margin-left: 70%;
+	margin-top: 1%;
+	cursor: pointer;
+}
+
+.bx-search:hover{
+	color: #C7D300;
+}
+.bx-user:hover{
+	color: #C7D300;
+}
+.bx-shopping-bag:hover{
+	color: #C7D300;
+}
+section nav .logo img{
+	margin-top:-31px;
+	padding:0PX;
+	position: absolute;
+	left:120px;
+	cursor: pointer;
+}
+.bg :hover{
+	color: #C7D300;
+}
+
+section nav ul{
+	list-style: none;
+	width: 60%;
+	margin:50px;
+}
+
+section nav ul li{
+	display: inline-block;
+	margin:0 10px;
+}
+
+section nav ul li a{
+	text-decoration: none;
+	color:white;
+	font-weight: 500;
+	font-size: 17px;
+	text-transform: uppercase;
+	transition: 0.1s;
+	font-family:Bahnschrift Light;
+}
+ section nav ul li a::after{
+ 	content: '';
+ 	width:0;
+ 	box-shadow: #fac031;
+ 	display: block;
+ 	transition: 0.2s linear;
+}
+section nav ul li a::hover::after{
+	width: 100%;
+}
+
+
+.background-img{
+	position: absolute;
+	background-size: cover;
+	left: 0px;
+	top: 89px;
+	background-image: url(22.jpg);
+	height:530px;
+	width: 1519px;
+}
+.contact h6{
+	position: absolute;
+	font-family:bebas neue;
+    font-size:75px;
+	font-weight:bold;
+    letter-spacing:3px;
+	top: 480px;
+	right:950px;
+	color: white;
+}
+.contact h5{
+    position: absolute;
+	font-family:Bahnschrift Light;
+    font-size:20px;
+	font-weight:bold;
+	top: 445px;
+	left:312px;
+	color: white;
+    word-spacing:2px;
+}
+.contact img{
+    position: absolute;
+    bottom:255px;
+    left:240px;
+    height:20px;
+    width:65px;
+}
+.row-1{
+    position: absolute;
+    height:2020px;
+    width: 100%;
+    background-color: #0a0a0a;
+    left: 0px;
+    margin-top:618px;
+}
+
+
+.class3 img{
+    position: absolute;
+    height:450px;
+    width:700px;
+    left: 180px;
+    bottom:1430px;
+    transition-property: width, height;
+    transition-duration:1s;
+    cursor: pointer;
+}
+.class3 img:hover{
+    width:715px ;
+    height:465px ;
+}
+.class4{
+    position: absolute;
+    height:280px;
+    width: 530px;
+    background-color: white;
+    left:720px;
+    top:230px;
+}
+.class4 h6{
+	position: absolute;
+	font-family:bebas neue;
+    font-size:40px;
+	font-weight:bold;
+    letter-spacing:3px;
+	top:35px;
+	right:195px;
+	color:black;
+    transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class4 h5{
+    position: absolute;
+	font-family:Bahnschrift Light;
+    font-size:17px;
+	top:95px;
+	right:35px;
+	color:#464545;
+    line-height:2.50rem; 
+     transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class3 h6:hover{
+    top: 25px;
+}
+.class4 h5:hover{
+    top:85px;
+}
+.btn {
+    --color: #C7D300;
+    --color2: rgb(10, 25, 30);
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    bottom:-430px;
+    left:770px;
+    height:40px;
+    padding-top:-20px;
+    color: #C7D300;
+}
+   
+.btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+   
+.btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+   
+.btn:hover {
+    color: var(--color2);
+    
+}
+   
+.btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+.btn a:hover{
+    text-decoration: none;
+}
+
+
+.btn1 {
+    --color: #C7D300;
+    --color2: rgb(10, 25, 30);
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size:13px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    bottom:-1415px;
+    left:770px;
+    height:35px;
+    width: 130px;
+    padding-top:10px;
+}
+   
+.btn1::after, .btn1::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+   
+.btn1::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn1:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn1:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+   
+.btn1:hover {
+    color: var(--color2);
+}
+   
+.btn1:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+.btn1 a:hover{
+    text-decoration: none;
+}
+
+
+.cl1 img{
+    position: absolute;
+    height:50px;
+    width:25px;
+    left:1220px;
+    bottom:1490px;
+}
+
+
+
+
+.class5 img{
+    position: absolute;
+    height:450px;
+    width:700px;
+    left: 550px;
+    bottom:900px;
+    transition-property: width, height;
+    transition-duration:1s;
+    cursor: pointer;
+}
+.class5 img:hover{
+    width:715px ;
+    height:465px ;
+}
+.class6{
+    position: absolute;
+    height:280px;
+    width: 530px;
+    background-color: white;
+    left:180px;
+    top:755px;
+}
+.class6 h6{
+	position: absolute;
+	font-family:bebas neue;
+    font-size:40px;
+	font-weight:bold;
+    letter-spacing:3px;
+	top:35px;
+	right:250px;
+	color:black;
+    transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class6 h5{
+    position: absolute;
+	font-family:Bahnschrift Light;
+    font-size:17px;
+	top:95px;
+	right:35px;
+	color:#464545;
+    line-height:2.50rem; 
+     transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class5 h6:hover{
+    top: 25px;
+}
+.class6 h5:hover{
+    top:85px;
+}
+
+.btn2{
+    --color: #C7D300;
+    --color2: rgb(10, 25, 30);
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size:13px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    bottom:-915px;
+    left:230px;
+    height:35px;
+    width: 130px;
+    padding-top:10px;
+}
+   
+.btn2::after, .btn2::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+   
+.btn2::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn2:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn2:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+   
+.btn2:hover {
+    color: var(--color2);
+}
+   
+.btn2:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+.btn2 a:hover{
+    text-decoration: none;
+}
+
+.cl2 img{
+    position: absolute;
+    height:50px;
+    width:25px;
+    left:680px;
+    bottom:965px;
+}
+
+
+
+
+
+.class7 img{
+    position: absolute;
+    height:450px;
+    width:700px;
+    left: 180px;
+    bottom:370px;
+    transition-property: width, height;
+    transition-duration:1s;
+    cursor: pointer;
+}
+.class7 img:hover{
+    width:715px ;
+    height:465px ;
+}
+.class8{
+    position: absolute;
+    height:280px;
+    width: 530px;
+    background-color: white;
+    left:720px;
+    top:1290px;
+}
+.class8 h6{
+	position: absolute;
+	font-family:bebas neue;
+    font-size:40px;
+	font-weight:bold;
+    letter-spacing:3px;
+	top:35px;
+	right:250px;
+	color:black;
+    transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class8 h5{
+    position: absolute;
+	font-family:Bahnschrift Light;
+    font-size:17px;
+	top:95px;
+	right:35px;
+	color:#464545;
+    line-height:2.50rem; 
+     transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class7 h6:hover{
+    top: 25px;
+}
+.class8 h5:hover{
+    top:85px;
+}
+.cl3 img{
+    position: absolute;
+    height:50px;
+    width:25px;
+    left:1220px;
+    bottom:430px;
+}
+
+
+.th{
+    height:1350px;
+    width: 100%;
+    background-color: #0a0a0a;
+    position: absolute;
+    bottom: -1350px;
+}
+
+
+.class9 img{
+    position: absolute;
+    height:450px;
+    width:700px;
+    left: 550px;
+    bottom:-160px;
+    transition-property: width, height;
+    transition-duration:1s;
+    cursor: pointer;
+}
+.class9 img:hover{
+    width:715px ;
+    height:465px ;
+}
+.class10{
+    position: absolute;
+    height:280px;
+    width: 530px;
+    background-color: white;
+    left:180px;
+    top:1825px;
+}
+.class10 h6{
+	position: absolute;
+	font-family:bebas neue;
+    font-size:40px;
+	font-weight:bold;
+    letter-spacing:3px;
+	top:35px;
+	right:250px;
+	color:black;
+    transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class10 h5{
+    position: absolute;
+	font-family:Bahnschrift Light;
+    font-size:17px;
+	top:95px;
+	right:35px;
+	color:#464545;
+    line-height:2.50rem; 
+     transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class9 h6:hover{
+    top: 25px;
+}
+.class10 h5:hover{
+    top:85px;
+}
+
+.btn3{
+    --color: #C7D300;
+    --color2: rgb(10, 25, 30);
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size:13px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    bottom:-1915px;
+    left:230px;
+    height:35px;
+    width: 130px;
+    padding-top:10px;
+}
+   
+.btn3::after, .btn3::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+   
+.btn3::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn3:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn3:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+   
+.btn3:hover {
+    color: var(--color2);
+}
+   
+.btn3:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+.btn3 a:hover{
+    text-decoration: none;
+}
+
+.cl4 img{
+    position: absolute;
+    height:50px;
+    width:25px;
+    left:680px;
+    bottom:-105px;
+}
+
+
+.class11 img{
+    position: absolute;
+    height:450px;
+    width:700px;
+    left: 180px;
+    bottom:-695px;
+    transition-property: width, height;
+    transition-duration:1s;
+    cursor: pointer;
+}
+.class11 img:hover{
+    width:715px ;
+    height:465px ;
+}
+.class12{
+    position: absolute;
+    height:280px;
+    width: 530px;
+    background-color: white;
+    left:720px;
+    top:2350px;
+}
+.class12 h6{
+	position: absolute;
+	font-family:bebas neue;
+    font-size:40px;
+	font-weight:bold;
+    letter-spacing:3px;
+	top:35px;
+	right:207px;
+	color:black;
+    transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class12 h5{
+    position: absolute;
+	font-family:Bahnschrift Light;
+    font-size:17px;
+	top:95px;
+	right:35px;
+	color:#464545;
+    line-height:2.50rem; 
+     transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class11 h6:hover{
+    top: 25px;
+}
+.class12 h5:hover{
+    top:85px;
+}
+.btn4{
+    --color: #C7D300;
+    --color2: rgb(10, 25, 30);
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size:13px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    bottom:-2410px;
+    left:770px;
+    height:35px;
+    width: 130px;
+    padding-top:10px;
+}
+   
+.btn4::after, .btn4::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+   
+.btn4::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn4:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn4:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+   
+.btn4:hover {
+    color: var(--color2);
+}
+   
+.btn4:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+.btn4 a:hover{
+    text-decoration: none;
+}
+
+.cl5 img{
+    position: absolute;
+    height:50px;
+    width:25px;
+    left:1220px;
+    bottom:-630px;
+}
+
+
+
+
+.class13 img{
+    position: absolute;
+    height:450px;
+    width:700px;
+    left: 550px;
+    bottom:-1245px;
+    transition-property: width, height;
+    transition-duration:1s;
+    cursor: pointer;
+}
+.class13 img:hover{
+    width:715px ;
+    height:465px ;
+}
+.class14{
+    position: absolute;
+    height:280px;
+    width: 530px;
+    background-color: white;
+    left:180px;
+    top:2900px;
+}
+.class14 h6{
+	position: absolute;
+	font-family:bebas neue;
+    font-size:40px;
+	font-weight:bold;
+    letter-spacing:3px;
+	top:35px;
+	right:255px;
+	color:black;
+    transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class14 h5{
+    position: absolute;
+	font-family:Bahnschrift Light;
+    font-size:17px;
+	top:95px;
+	right:35px;
+	color:#464545;
+    line-height:2.50rem; 
+     transition-property: top;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.class13 h6:hover{
+    top: 25px;
+}
+.class14 h5:hover{
+    top:85px;
+}
+
+.btn5{
+    --color: #C7D300;
+    --color2: rgb(10, 25, 30);
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size:13px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    bottom: -2925px;
+    left:230px;
+    height:35px;
+    width: 130px;
+    padding-top:10px;
+}
+   
+.btn5::after, .btn5::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+   
+.btn5::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn5:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+.btn5:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+   
+.btn5:hover {
+    color: var(--color2);
+}
+   
+.btn5:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}.btn5 a:hover{
+    text-decoration: none;
+}
+
+
+.cl6 img{
+    position: absolute;
+    height:50px;
+    width:25px;
+    left:680px;
+    bottom:-1180px;
+}
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    }
+    .footer1 img{
+        position: absolute;
+        bottom: 0px;
+        left:45px;
+        box-shadow: 0.5px 6px 45px 8px #464545
+    }
+    footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom:-3705px;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    }
+    .footer-img img{
+        position: absolute;
+        left:120px;
+        cursor: pointer;
+        bottom:350px;
+    }
+    .footer-img2 h3{
+        position: absolute;
+        font-size: 19px;
+        color: #ABB7B7;
+        bottom:312px;
+        left:120px;
+    }
+    .footer-img2 h2{
+        position: absolute;
+        font-size: 19px;
+        color: #ABB7B7;
+        bottom:287px;
+        left:120px;
+    }
+    .footer-img2 h5{
+        position: absolute;
+        font-size: 19px;
+        color: #ABB7B7;
+        bottom:262px;
+        left:120px;
+    }
+    
+    .fb{
+        position: absolute;
+        height: 55px;
+        width: 55px;
+        background-color: #C7D300;
+        bottom: 185px;
+        left: 120px;
+    }
+    .footer-4 img{
+        position: absolute;
+        bottom: 180px;
+        left: 115px;
+    }
+    .footer-4 h6{
+        position: absolute;
+        font-size: 17px;
+        color: #ABB7B7;
+        bottom:210px;
+        left:190px;
+    }
+    .footer-4 h5{
+        position: absolute;
+        bottom:177px;
+        font-size:28px;
+        font-weight: bold;
+        left: 190px;
+    }
+    .footer-column1 h3 {
+    margin-bottom: 0px;
+    position: absolute;
+    left:500px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:25px;
+    bottom:370px;
+    }
+    .footer-column1 ul{
+        position: absolute;
+	color: white;
+	left: 520px;
+	line-height:2.90rem;
+	list-style:none;
+	font-size:19px;
+	bottom:140px;
+    
+    }
+    .footer-column2 h3 {
+        margin-bottom: 0px;
+        position: absolute;
+        left:740px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size:25px;
+        bottom:370px;
+    }
+    .footer-column2 p{
+        position: absolute;
+        color: #ABB7B7;
+        left: 730px;
+        line-height: 3.20rem;
+        list-style:none;
+        font-size:19px;
+        bottom:180px;
+    }
+    
+    .footer-column3 h3{
+        margin-bottom: 0px;
+        position: absolute;
+        left:990px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size:25px;
+        bottom:370px;
+    }
+    .footer-column3 h4{
+        position: absolute;
+        color: #ABB7B7;
+        left: 990px;
+        line-height: 3.20rem;
+        list-style:none;
+        font-size:19px;
+        bottom:312px;
+    }
+    .footer-column4 h3{
+        position: absolute;
+        color: #ABB7B7;
+        left: 990px;
+        line-height: 3.20rem;
+        list-style:none;
+        font-size:19px;
+        bottom:285px;
+    }
+    .m2{
+        bottom:496px;
+        font-size: 17px;
+        float:left;
+        padding-left:523px;
+        position: absolute;
+    }
+      
+    .m4{
+        height:48px;
+        width:250px;
+        font-size:15px;
+        position: absolute;  
+        bottom: 229px;
+        border: none;
+        float: left;
+        left: 990px;
+        color: black;
+    }
+    .line{
+        width: 100px;
+        background-color:none;
+        height: 20px;
+    }
+    .learn9{
+        position: absolute;
+        border: 1px solid none; 
+        border-radius:0px;
+        font-size:20px;
+        font-weight: bold;
+        height: 48px;
+        width:120px;
+        bottom:229px;
+        float: left;
+        left:1240px;
+        text-align:center;
+        padding:10px;
+        cursor: pointer;
+        color: black;
+        background-color:#C7D300;
+    }
+    .learn9:hover{
+        background-color:#464545;
+        color: black;
+    }
+      
+    .learn9 a{
+        text-decoration: none;
+    }
+    
+    .m3 hr{
+        position: absolute;
+        bottom:80px;
+        left:100px;
+        opacity: 0.2;
+    }
+    .ic{
+        position: absolute;
+        height:40px;
+        width: 40px;
+        border: 2px solid grey;
+        bottom:78px;
+        left:635px;
+        background-color:rgb(22, 22, 22);
+        
+    }
+    .ic i{
+        fill: white;
+        font-size: 28px;
+        color: white;
+        position: absolute;
+        margin-left:-35%;
+        margin-top:10%;
+        cursor: pointer;
+    }
+    .ic:hover{
+        background-color: #C7D300;
+    }
+    .ic2{
+        position: absolute;
+        height:40px;
+        width: 40px;
+        border: 2px solid grey;
+        bottom:78px;
+        left:690px;
+        background-color:rgb(22, 22, 22);
+        
+    }
+    .ic2 i{
+        fill: white;
+        font-size: 28px;
+        color: white;
+        position: absolute;
+        margin-left:-38%;
+        margin-top:10%;
+        cursor: pointer;
+    }
+    .ic2:hover{
+        background-color: #C7D300;
+    }
+    .ic3{
+        position: absolute;
+        height:40px;
+        width: 40px;
+        border: 2px solid grey;
+        bottom:78px;
+        left:745px;
+        background-color:rgb(22, 22, 22);
+        
+    }
+    .ic3 i{
+        fill: white;
+        font-size: 28px;
+        color: white;
+        position: absolute;
+        margin-left:-38%;
+        margin-top:10%;
+        cursor: pointer;
+    }
+    .ic3:hover{
+        background-color: #C7D300;
+    }
+    .ic4{
+        position: absolute;
+        height:40px;
+        width: 40px;
+        border: 2px solid grey;
+        bottom:78px;
+        left:800px;
+        background-color:rgb(22, 22, 22);
+        
+    }
+    .ic4 i{
+        fill: white;
+        font-size: 28px;
+        color: white;
+        position: absolute;
+        margin-left:-38%;
+        margin-top:10%;
+        cursor: pointer;
+    }
+    .ic4:hover{
+        background-color: #C7D300;
+    }
+    .ic5{
+        position: absolute;
+        font-size:15px;
+        left:550px;
+        bottom:35px;
+        color: #ABB7B7;
+    }
+    
+    
+    
+
+
